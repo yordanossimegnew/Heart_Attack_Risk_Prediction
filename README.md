@@ -2,7 +2,7 @@
 
 ![heart attack](https://github.com/yordanossimegnew/End_to_End_Heart_Attack_Risk_Prediction/blob/main/heart%20attack.jpg)
 
-![web app gif](https://github.com/yordanossimegnew/End_to_End_Heart_Attack_Risk_Prediction/blob/main/real%20time%20app.gif)
+![web app mp4](https://github.com/yordanossimegnew/Heart_Attack_Risk_Prediction/blob/main/web%20app.mp4)
 
 ![confusion matrix](https://github.com/yordanossimegnew/End_to_End_Heart_Attack_Risk_Prediction/blob/main/reports/figure/confusion_matrix.jpg)
 
