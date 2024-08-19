@@ -2,6 +2,8 @@
 
 ![heart attack](https://github.com/yordanossimegnew/End_to_End_Heart_Attack_Risk_Prediction/blob/main/heart%20attack.jpg)
 
+![web app gif](https://github.com/yordanossimegnew/End_to_End_Heart_Attack_Risk_Prediction/blob/main/real%20time%20app.gif)
+
 ![confusion matrix](https://github.com/yordanossimegnew/End_to_End_Heart_Attack_Risk_Prediction/blob/main/reports/figure/confusion_matrix.jpg)
 
 This repository contains an end-to-end machine learning project aimed at predicting the risk of heart attacks using various patient health metrics. The project utilizes Python and various libraries for data processing, feature engineering, model training, and web deployment.
