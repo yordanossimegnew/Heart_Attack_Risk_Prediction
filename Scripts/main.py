@@ -46,14 +46,14 @@ def predict(input_data: InputDataList):
     # Make predictions
     predictions = pipeline.predict(input_df)
     
-    return {"predictions": predictions.tolist()}
+    return {"predictions": predictions.tolist()[0]}
 
 
 @app.get("/")
 def read_root():
     return {"message": "Heart Attack Risk Prediction API"}
 
-
+# main
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8000)
