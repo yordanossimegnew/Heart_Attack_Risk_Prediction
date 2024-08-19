@@ -1,14 +1,10 @@
-import os
-
-PATH_TO_DATASET = os.path.join("C:\\Users\\yozil\\Desktop\\My projects\\",
-                               "10. End_to_End_Heart_Attack_Risk_Prediction",
-                               "\\data\\raw data\\heart.csv")
-
 TARGET = "output"
+DATASET_PATH = "C:\\Users\\yozil\\Desktop\\My projects\\10. End_to_End_Heart_Attack_Risk_Prediction\\data\\raw data\\heart.csv"
 
-NUMERICAL_YEO_JOHNSON = ["trtbps"]
+NUM_RECIPROCAL = ["trtbps"]
+NUM_YEO_JOHNSON = ["chol"]
 
-NUMERICAL_RECIPROCAL = ["chol"]
-
-FEATURES = ['sex', 'cp', 'trtbps', 'chol', 'fbs', 'restecg', 'thalachh',
-            'exng', 'oldpeak', 'slp', 'caa', 'thall']
+FEATURES = ['sex', 'cp', 'trtbps', 'chol',
+            'fbs', 'restecg', 'thalachh', 'exng',
+            'oldpeak', 'slp', 'caa', 'thall'
+            ]
