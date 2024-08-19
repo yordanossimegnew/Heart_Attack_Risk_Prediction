@@ -1,8 +1,8 @@
 # Heart Attack Risk Prediction
 
-![House Prices](https://github.com/yordanossimegnew/End_to_End_House_Price_Prediction/blob/690f40979a41340c5f56a59e7e7baaef8265c474/house%20image.jpg)
-![Distribution of Residuals](https://github.com/yordanossimegnew/End_to_End_House_Price_Prediction/blob/690f40979a41340c5f56a59e7e7baaef8265c474/reports/figures/Distibution%20of%20Residuals.jpg)
-![Actual vs Predicted Sale Price](https://github.com/yordanossimegnew/End_to_End_House_Price_Prediction/blob/690f40979a41340c5f56a59e7e7baaef8265c474/reports/figures/Actual%20Vs%20Pridicted%20Sale%20Price.jpg)
+![heart attack](https://github.com/yordanossimegnew/End_to_End_Heart_Attack_Risk_Prediction/blob/main/heart%20attack.jpg)
+
+![confusion matrix](https://github.com/yordanossimegnew/End_to_End_Heart_Attack_Risk_Prediction/blob/main/reports/figure/confusion_matrix.jpg)
 
 This repository contains an end-to-end machine learning project aimed at predicting the risk of heart attacks using various patient health metrics. The project utilizes Python and various libraries for data processing, feature engineering, model training, and web deployment.
 
