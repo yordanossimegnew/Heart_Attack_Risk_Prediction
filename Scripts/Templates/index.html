@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Prediction</title>
+    <style>
+        .risk {
+            color: red;
+            font-weight: bold;
+        }
+        .not-risk {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heart Attack Risk Prediction</h1>
+    <form action="/predict_form" method="post">
+        <label for="sex">Sex (0: Female, 1: Male):</label>
+        <input type="number" id="sex" name="sex" min="0" max="1" required><br><br>
+        
+        <label for="cp">Chest Pain Type (0-3):</label>
+        <input type="number" id="cp" name="cp" min="0" max="3" required><br><br>
+        
+        <label for="trtbps">Resting Blood Pressure (20-300):</label>
+        <input type="number" id="trtbps" name="trtbps" min="20" max="300" step="0.1" required><br><br>
+        
+        <label for="chol">Cholesterol (100-800):</label>
+        <input type="number" id="chol" name="chol" min="100" max="800" step="0.1" required><br><br>
+        
+        <label for="fbs">Fasting Blood Sugar (0 or 1):</label>
+        <input type="number" id="fbs" name="fbs" min="0" max="1" required><br><br>
+        
+        <label for="restecg">Resting Electrocardiographic Results (0-2):</label>
+        <input type="number" id="restecg" name="restecg" min="0" max="2" required><br><br>
+        
+        <label for="thalachh">Maximum Heart Rate (50-300):</label>
+        <input type="number" id="thalachh" name="thalachh" min="50" max="300" step="0.1" required><br><br>
+        
+        <label for="exng">Exercise Induced Angina (0 or 1):</label>
+        <input type="number" id="exng" name="exng" min="0" max="1" required><br><br>
+        
+        <label for="oldpeak">Oldpeak (0-7):</label>
+        <input type="number" id="oldpeak" name="oldpeak" min="0" max="7" step="0.1" required><br><br>
+        
+        <label for="slp">Slope of Peak Exercise ST Segment (0-2):</label>
+        <input type="number" id="slp" name="slp" min="0" max="2" required><br><br>
+        
+        <label for="caa">Number of Major Vessels (0-4):</label>
+        <input type="number" id="caa" name="caa" min="0" max="4" required><br><br>
+        
+        <label for="thall">Thalassemia (0-3):</label>
+        <input type="number" id="thall" name="thall" min="0" max="3" required><br><br>
+        
+        <button type="submit">Predict</button>
+    </form>
+    
+    {% if prediction is not none %}
+        <h2>Prediction Result</h2>
+        <p>
+            {% if prediction %}
+                <span class="risk">{{ message }}</span>
+            {% else %}
+                <span class="not-risk">{{ message }}</span>
+            {% endif %}
+        </p>
+    {% endif %}
+</body>
+</html>
