@@ -59,10 +59,10 @@ class Pipeline:
 
         
         # now apply a standard scaler to the whole dataframe
-        self.scaler.fit(self.x_train)
+        self.scaler.fit(self.x_train[self.features])
         
-        self.x_train = pd.DataFrame(self.scaler.transform(self.x_train), columns = self.x_train.columns)
-        self.x_test = pd.DataFrame(self.scaler.transform(self.x_test), columns = self.x_test.columns)
+        self.x_train = pd.DataFrame(self.scaler.transform(self.x_train[self.features]), columns = self.features)
+        self.x_test = pd.DataFrame(self.scaler.transform(self.x_test[self.features]), columns = self.features)
         
         # train model
         self.model.fit(self.x_train[self.features], self.y_train)
